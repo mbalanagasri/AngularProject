@@ -1,0 +1,50 @@
+
+<div class="container">
+    <form class="form-horizontal">
+     <label style="text-align:center;"> REGISTRATION PAGE</label>   
+<div class="form-group">
+    <label class="control-label col-sm-2">Firstname</label>
+<input type="text"  class="form-control" [(ngModel)]="registrationFormValues.firstname" [ngModelOptions]="{standalone:true}"[placeholder]="firstname">
+</div>
+<div class="form-group">
+<label class="control-label col-sm-2">Lastname</label>
+<input type="text"  class="form-control" [(ngModel)]="registrationFormValues.lastname" [ngModelOptions]="{standalone:true}" [placeholder]="lastname">
+</div>
+<div class="form-group">
+    <label class="control-label col-sm-2">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1"  [(ngModel)]="registrationFormValues.email" [ngModelOptions]="{standalone: true}" placeholder="email">
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2">Password</label>
+    <input type="password" class="form-control" [(ngModel)]="registrationFormValues.password" [ngModelOptions]="{standalone:true}" [placeholder]="password">
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2">Confirm Password</label>
+    <input type="password" class="form-control" [(ngModel)]="registrationFormValues.confirmpassword" [ngModelOptions]="{standalone:true}"[placeholder]="confirmpassword">
+  </div>
+  <div class="form-group">
+  <label class="control-label col-sm-2">Date of birth</label>
+  <input type="date" name="date of birth"[(ngModel)]="registrationFormValues.dateofbirth" [ngModelOptions]="{standalone:true}"[placeholder]="dateofbirth">
+  </div>
+  <!-- <div class="form-group">
+  <label class="control-label col-sm-2">Gender:</label>
+  <label><input type="radio" name="optradio" checked>MALE</label>
+ <label><input type="radio" name="optradio"checked>FEMALE</label>
+  </div> -->
+ <div class="form-group">
+      <label class="control-label col-sm-2">Phone Number</label>
+      <input type="text" class="form-control" [(ngModel)]="registrationFormValues.phonenumber" [ngModelOptions]="{standalone:true}"[placeholder]=" phonenumber">
+  </div>
+<div class="form-group">
+    <label class="control-label col-sm-2">Location </label>
+    <input type="text" class="form-control" [(ngModel)]="registrationFormValues.location" [ngModelOptions]="{standalone:true}"[placeholder]="location">
+</div>
+<div class="form-group">
+    <label class="control-label col-sm-2">Address</label>
+    <textarea  rows="3" class="form-control" [(ngModel)]="registrationFormValues.address" [ngModelOptions]="{standalone:true}"[placeholder]="address"></textarea>
+</div>
+<div class="form-group">
+<input class="btn btn-primary" type="submit" value="Submit" (click)="onClickMe()"> 
+</div>
+</form>
+</div>
